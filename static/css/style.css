@@ -1,0 +1,29 @@
+body {
+    background-image: url("/static/images/bgimg.jpg"); /* Adjust the filename */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensures full height */
+    margin: 0;
+
+    color: rgb(135, 91, 35); /* Light font color */
+}
+table {
+    width: 100%; /* Makes table use full width */
+}
+th{
+    font-family: Arial, sans-serif;  /* Change to your preferred font */
+    font-size: 14px;  /* Adjust the size */
+    font-weight: bold; /* Make it bold for better readability */
+    color: black;  /* Change text color for better contrast */
+    background-color: rgba(126, 102, 82, 0.7); /* Light background for contrast */
+    padding: 10px; /* Add some padding for spacing */
+}
+td {
+    font-family: Arial, sans-serif;  /* Change to your preferred font */
+    font-size: 18px;  /* Adjust the size */
+    font-weight: bold; /* Make it bold for better readability */
+    color: black;  /* Change text color for better contrast */
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for contrast */
+    padding: 10px; /* Add some padding for spacing */
+}
