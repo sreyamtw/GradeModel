@@ -13,7 +13,8 @@ There are Html templates supporting each routes in flask with bootstrap and css.
 3. scores : For storing the scores of the exam for the registered students
 
 ### Week 2 Plan
-* Try to use a dataset for MCQ question bank
+* Try to implement NLP for subjective questions
+* Diversify question bank
 * Choosing questions at random
 * Try to implement a coding evaluation part of exam 
 
