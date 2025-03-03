@@ -12,10 +12,17 @@ There are Html templates supporting each routes in flask with bootstrap and css.
 2. users : 125 students who have an account on the web application
 3. scores : For storing the scores of the exam for the registered students
 
-### Week 2 Plan
-* Try to implement NLP for subjective questions
-* Diversify question bank
-* Choosing questions at random
-* Try to implement a coding evaluation part of exam 
+## Week 2 
+This week is mainly focused on subjective question evaluation
+* Tried to implement NLP for subjective questions
+* Explored different LLMs
+* Created a dataset with questions having answers ranging from 0-5 marks. About 1000 entries, some paraphrased.
+* Choose T5 small and fine tuned the model
+* Model needs to be improved
 
-
+## Week 3 Plan
+* Split the dataset and finetune again
+* Try LLAMA models
+* Integrate model to flask
+* Modify scores table to add in scores
+* Try to build code evaluation part
