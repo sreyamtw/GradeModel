@@ -20,9 +20,13 @@ This week is mainly focused on subjective question evaluation
 * Choose T5 small and fine tuned the model
 * Model needs to be improved
 
-## Week 3 Plan
-* Split the dataset and finetune again
-* Try LLAMA models
-* Integrate model to flask
-* Modify scores table to add in scores
-* Try to build code evaluation part
+## Week 3
+* Split the dataset and finetune again 80-20 split
+* Tested and validated model
+* Tried to locally run flask for model as an individual app
+
+## Week 4 
+* Integrate model to main flask app
+* Stored subjective question answers, scores and feedback to subjective_scores table
+* Succesfully ran app locally
+* Deployed the objective type exam part on PythonAnywhere since the model was too big to be hosted online on free tier
