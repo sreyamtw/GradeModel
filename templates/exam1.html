@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Subjective Exam{% endblock %}
+
+{% block content %}
+<h2 class="text-center">Answer the Questions</h2>
+<form action="{{ url_for('submit') }}" method="POST" autocomplete="off">
+    {% for i in range(questions|length) %}
+    <div class="form-group">
+        <label for="question_{{ i }}"><strong>Question {{ i+1 }}:</strong> {{ questions[i] }}</label>
+        <textarea class="form-control" name="answer_{{ i }}" rows="3" required></textarea>
+    </div>
+    {% endfor %}
+
+    <button type="submit" class="btn btn-primary btn-block">Submit Answers</button>
+</form>
+{% endblock %}

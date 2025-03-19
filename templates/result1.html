@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Exam Results{% endblock %}
+
+{% block content %}
+<h2 class="text-center">Your Exam Results</h2>
+
+{% for result in results %}
+<div class="card mt-3">
+    <div class="card-body">
+        <h5 class="card-title">Question: {{ result.question }}</h5>
+        <p><strong>Your Answer:</strong> {{ result.answer }}</p>
+        <p><strong>Score:</strong> {{ result.score }}</p>
+        <p><strong>Feedback:</strong> {{ result.feedback }}</p>
+    </div>
+</div>
+{% endfor %}
+
+<a href="{{ url_for('home') }}" class="btn btn-success btn-block mt-3">Go Home</a>
+{% endblock %}

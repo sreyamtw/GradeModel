@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Exam{% endblock %}
+
+{% block content %}
+    <div class="exam-container">
+    <h2>MCQ Exam</h2>
+    
+    {% if already_taken %}
+        <p>You have already taken this exam. Your score: {{ score }}</p>
+    {% else %}
+        <form method="post">
+            <p>1. What is a variable in Python?</p>
+            <input type="radio" name="q1" value="A reserved word"> A reserved word <br>
+            <input type="radio" name="q1" value="A data type"> A data type <br>
+            <input type="radio" name="q1" value="A location in memory to store data"> A location in memory to store data <br>
+            <input type="radio" name="q1" value="A function"> A function <br>
+
+            <p>2. How do you declare a variable in Python?</p>
+            <input type="radio" name="q2" value="var x"> var x <br>
+            <input type="radio" name="q2" value="x = variable"> x = variable <br>
+            <input type="radio" name="q2" value="declare x"> declare x <br>
+            <input type="radio" name="q2" value="x = 4"> x = 4 <br>
+
+            <p>3. How to add a single line comment in Python?</p>
+            <input type="radio" name="q3" value="//"> // <br>
+            <input type="radio" name="q3" value="#"> # <br>
+            <input type="radio" name="q3" value="/* */"> /* */ <br>
+            <input type="radio" name="q3" value="--"> -- <br>
+            <p>4. In Python, what is a class?</p>
+            <input type="radio" name="q4" value="Function"> Function <br>
+            <input type="radio" name="q4" value="Module"> Module <br>
+            <input type="radio" name="q4" value="Code block"> Code block <br>
+            <input type="radio" name="q4" value="Blueprint for creating objects"> Blueprint for creating objects <br>
+
+            <p>5. In OOP, what is the benefit of using encapsulation?</p>
+            <input type="radio" name="q5" value="Improved code organization"> Improved code organization <br>
+            <input type="radio" name="q5" value="Code reusability"> Code reusability <br>
+            <input type="radio" name="q5" value="Enhanced code readability"> Enhanced code readability <br>
+            <input type="radio" name="q5" value="Increased system performance"> Increased system performance <br>
+            <br>
+
+            <button type="submit">Submit Exam</button>
+        </form>
+    {% endif %}
+    </div>
+{% endblock %}
